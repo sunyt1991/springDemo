@@ -11,4 +11,8 @@ public class PersonService {
 		this.name = name;
 	}
 	
+	public void say(){
+		System.out.println("hello,this is "+getName());
+	}
+	
 }
