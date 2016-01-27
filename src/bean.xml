@@ -8,4 +8,15 @@
  		<property name="name" value="sunyt"></property>
  	</bean>
  	
+ 	<bean id="chinese" class="demo01.entity.impl.Chinese">
+ 		<property name="axe" ref="steelaxe"></property>
+ 	</bean>
+ 	
+ 	<bean id="american" class="demo01.entity.impl.American">
+ 		<constructor-arg ref="steelaxe" index="0"></constructor-arg>
+ 	</bean>
+ 	
+ 	<bean id="stoneaxe" class="demo01.entity.impl.StoneAxe"></bean>
+ 	
+ 	<bean id="steelaxe" class="demo01.entity.impl.SteelAxe"></bean>
 </beans>
